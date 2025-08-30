@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Badagala Rupa Sri | Java Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_Version3.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <h1>Badagala Rupa Sri</h1>
         <nav>
             <a href="#about">About</a>
@@ -16,16 +18,16 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <!-- Add a profile image named 'profile.jpg' in your repo for this to show -->
         <img src="profile.jpg" alt="Badagala Rupa Sri" width="150" />
         <h2>About Me</h2>
         <p>
-            Hi! I'm Badagala Rupa Sri, a passionate and driven aspiring Java developer. I'm deeply interested in Java development and constantly learning new technologies and concepts to enhance my skills. My journey involves mastering languages like Core Java, C, C++, HTML, CSS, and JavaScript. I'm exploring advanced frameworks and tools such as Spring Core, Aspect Oriented Programming, Spring Boot, Thymeleaf, Lombok Library, Spring Security, and H2 Database. <br><br>
+            Hi! I'm Badagala Rupa Sri, a passionate and driven aspiring Java developer. I'm deeply interested in Java development and constantly learning new technologies and concepts to enhance my skills. My journey involves mastering languages like Core Java, C, C++, HTML, CSS, and JavaScript. I'm exploring advanced frameworks and tools such as Spring Core, Aspect Oriented Programming, Spring Boot, Thymeleaf, Lombok Library, Spring Security, and H2 Database.<br><br>
             I enjoy solving Data Structures and Algorithms problems, applying Object Oriented Programming concepts, and working with SQL queries. My soft skills include leadership, teamwork, effective communication, and a commitment to continuous learning.
         </p>
     </section>
-    <section id="skills">
+    <section id="skills" data-aos="fade-right">
         <h2>Skills</h2>
         <h3>Languages</h3>
         <ul>
@@ -62,9 +64,9 @@
             <li>Effective Communication</li>
         </ul>
     </section>
-    <section id="projects">
+    <section id="projects" data-aos="zoom-in">
         <h2>Projects</h2>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
             <h3>What’s Next?</h3>
             <p>
                 <strong>Tech Stack:</strong> Firebase, HTML, CSS, JavaScript<br>
@@ -73,11 +75,11 @@
                 Built an interactive frontend using HTML, CSS, and JavaScript to provide a user-friendly experience.<br>
                 Focused on real-time recommendations, improving decision-making for students.
             </p>
-            <a href="https://whats-next-jv.vercel.app/" target="_blank">Live Project</a>
+            <a href="https://whats-next-jv.vercel.app/" target="_blank" class="btn">Live Project</a>
         </div>
         <!-- Add more projects here as needed -->
     </section>
-    <section id="profiles">
+    <section id="profiles" data-aos="fade-left">
         <h2>Coding Profiles</h2>
         <ul>
             <li><a href="https://leetcode.com/u/rupasribadagala/" target="_blank">LeetCode</a></li>
@@ -85,7 +87,7 @@
             <li><a href="https://www.geeksforgeeks.org/user/rupasribixjy/" target="_blank">GeeksforGeeks</a></li>
         </ul>
     </section>
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
         <ul>
             <li><strong>Name:</strong> Badagala Rupa Sri</li>
@@ -95,9 +97,14 @@
             <li><strong>GitHub:</strong> <a href="https://github.com/Rupasriiiii" target="_blank">Rupasriiiii</a></li>
         </ul>
     </section>
-    <footer>
+    <footer data-aos="fade-up">
         <p>&copy; 2025 Badagala Rupa Sri. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script_Version3.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
