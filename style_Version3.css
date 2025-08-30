@@ -1,0 +1,221 @@
+:root {
+    --primary: #0556f3;
+    --secondary: #f7f7fa;
+    --accent: #f0f6ff;
+    --text: #222;
+    --card: #fff;
+    --nav-bg: #0556f3;
+    --footer-bg: #0556f3;
+}
+
+[data-theme="dark"] {
+    --primary: #222e50;
+    --secondary: #181818;
+    --accent: #242a38;
+    --text: #f2f2f2;
+    --card: #232943;
+    --nav-bg: #222e50;
+    --footer-bg: #222e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+    margin: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    background: var(--nav-bg);
+    color: #fff;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+nav {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    margin: 0 auto;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: var(--accent);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.5rem 0.7rem;
+    box-shadow: 0 2px 8px rgba(5, 86, 243, 0.15);
+    transition: background 0.3s;
+    font-size: 1.2rem;
+}
+
+#theme-toggle:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(5, 86, 243, 0.06);
+    transition: background 0.5s, color 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s forwards;
+    animation-delay: 0.2s;
+}
+
+section.fade-in {
+    animation: fadeInUp 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: var(--primary);
+    margin-top: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+}
+
+.project-card {
+    border: 1px solid var(--accent);
+    border-radius: 9px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+    background: var(--accent);
+    box-shadow: 0 2px 8px rgba(5, 86, 243, 0.09);
+    transition: transform 0.4s, box-shadow 0.4s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.project-card:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 4px 16px rgba(5,86,243,0.17);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #0f172a;
+}
+
+footer {
+    background: var(--footer-bg);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 1rem;
+    transition: background 0.5s;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0;
+    }
+    section {
+        padding: 1rem;
+    }
+    nav a {
+        margin: 0 0.7rem;
+    }
+    #theme-toggle {
+        top: 1.2rem;
+        right: 1.2rem;
+    }
+}
