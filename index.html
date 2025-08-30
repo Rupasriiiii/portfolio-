@@ -2,71 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badagala Rupa Sri - Portfolio</title>
+    <title>Badagala Rupa Sri | Java Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="fade-in">
+    <header>
         <h1>Badagala Rupa Sri</h1>
-        <p>Aspiring Java Developer | Continuous Learner</p>
         <nav>
+            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#profiles">Coding Profiles</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button id="theme-toggle" aria-label="Toggle theme">
-            <span id="theme-icon">🌙</span>
-        </button>
     </header>
-    
-    <main>
-        <section id="intro" class="fade-in">
-            <h2>About Me</h2>
+    <section id="about">
+        <!-- Add a profile image named 'profile.jpg' in your repo for this to show -->
+        <img src="profile.jpg" alt="Badagala Rupa Sri" width="150" />
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Badagala Rupa Sri, a passionate and driven aspiring Java developer. I'm deeply interested in Java development and constantly learning new technologies and concepts to enhance my skills. My journey involves mastering languages like Core Java, C, C++, HTML, CSS, and JavaScript. I'm exploring advanced frameworks and tools such as Spring Core, Aspect Oriented Programming, Spring Boot, Thymeleaf, Lombok Library, Spring Security, and H2 Database. <br><br>
+            I enjoy solving Data Structures and Algorithms problems, applying Object Oriented Programming concepts, and working with SQL queries. My soft skills include leadership, teamwork, effective communication, and a commitment to continuous learning.
+        </p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Languages</h3>
+        <ul>
+            <li>Core Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h3>Technologies</h3>
+        <ul>
+            <li>Spring core concepts</li>
+            <li>Creation of beans inside spring context</li>
+            <li>Aspect Oriented Programming</li>
+            <li>Spring Boot</li>
+            <li>Thymeleaf</li>
+            <li>Lombok Library</li>
+            <li>Spring Security</li>
+            <li>CSRF attack fix implementation</li>
+            <li>Spring Boot H2 Database</li>
+        </ul>
+        <h3>Concepts</h3>
+        <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>OOP concepts</li>
+            <li>Basic SQL queries</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Leadership</li>
+            <li>Team Work</li>
+            <li>Continuous Learning</li>
+            <li>Effective Communication</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>What’s Next?</h3>
             <p>
-                I am passionate about Java development and actively learning modern technologies to build impactful software. I believe in continuous improvement, teamwork, and effective communication. My goal is to create robust applications and contribute to innovative projects.
+                <strong>Tech Stack:</strong> Firebase, HTML, CSS, JavaScript<br>
+                Designed and developed a student advisory platform that suggests future study options and job opportunities based on current qualifications.<br>
+                Implemented Firebase backend for data storage and retrieval.<br>
+                Built an interactive frontend using HTML, CSS, and JavaScript to provide a user-friendly experience.<br>
+                Focused on real-time recommendations, improving decision-making for students.
             </p>
-        </section>
-        
-        <section id="skills" class="fade-in">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Core Java, C, C++, HTML, CSS, JavaScript</li>
-                <li><strong>Technologies:</strong> Spring Core, Beans, AOP, Spring Boot, Thymeleaf, Lombok, Spring Security, CSRF Protection, H2 Database</li>
-                <li><strong>Concepts:</strong> Data Structures & Algorithms, OOP, Basic SQL Queries</li>
-                <li><strong>Soft Skills:</strong> Leadership, Teamwork, Continuous Learning, Effective Communication</li>
-            </ul>
-        </section>
-        
-        <section id="projects" class="fade-in">
-            <h2>Projects</h2>
-            <div class="project-card slide-up">
-                <h3>What’s Next?</h3>
-                <p>
-                    <strong>Tech:</strong> Firebase, HTML, CSS, JavaScript<br>
-                    Designed and developed a student advisory platform that suggests future study options and job opportunities based on current qualifications. Features real-time recommendations and an interactive frontend for a seamless user experience.
-                </p>
-                <a href="https://whats-next-jv.vercel.app/" target="_blank">Live Demo</a>
-            </div>
-            <!-- Add more projects here! -->
-        </section>
-        
-        <section id="contact" class="fade-in">
-            <h2>Contact & Coding Profiles</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:rupasribadagala@gmail.com">rupasribadagala@gmail.com</a></li>
-                <li><strong>Phone:</strong> 9705489303</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/badagala-rupa-sri-826243266" target="_blank">badagala-rupa-sri</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Rupasriiiii" target="_blank">Rupasriiiii</a></li>
-                <li><strong>LeetCode:</strong> <a href="https://leetcode.com/u/rupasribadagala/" target="_blank">rupasribadagala</a></li>
-                <li><strong>CodeChef:</strong> <a href="https://www.codechef.com/users/rupasri_27" target="_blank">rupasri_27</a></li>
-                <li><strong>GeeksforGeeks:</strong> <a href="https://www.geeksforgeeks.org/user/rupasribixjy/" target="_blank">rupasribixjy</a></li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer class="fade-in">
-        <p>&copy; 2025 Badagala Rupa Sri</p>
+            <a href="https://whats-next-jv.vercel.app/" target="_blank">Live Project</a>
+        </div>
+        <!-- Add more projects here as needed -->
+    </section>
+    <section id="profiles">
+        <h2>Coding Profiles</h2>
+        <ul>
+            <li><a href="https://leetcode.com/u/rupasribadagala/" target="_blank">LeetCode</a></li>
+            <li><a href="https://www.codechef.com/users/rupasri_27" target="_blank">CodeChef</a></li>
+            <li><a href="https://www.geeksforgeeks.org/user/rupasribixjy/" target="_blank">GeeksforGeeks</a></li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Name:</strong> Badagala Rupa Sri</li>
+            <li><strong>Phone:</strong> <a href="tel:9705489303">9705489303</a></li>
+            <li><strong>Email:</strong> <a href="mailto:rupasribadagala@gmail.com">rupasribadagala@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/badagala-rupa-sri-826243266" target="_blank">badagala-rupa-sri-826243266</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Rupasriiiii" target="_blank">Rupasriiiii</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Badagala Rupa Sri. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
